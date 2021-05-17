@@ -1,9 +1,13 @@
-<p align="center"><a href="https://mo-tika.netlify.app/"><img src="https://img.shields.io/badge/Visit-Mo%20Tika-orange?style=for-the-badge&logo=google-chrome" /></p>
+<p align="center"><a href="https://mo-tika.netlify.app/"/><img src="https://img.shields.io/badge/Visit-Mo%20Tika-orange?style=for-the-badge&logo=google-chrome" /></p>
 
 <p align="center">
 <img src="https://img.shields.io/github/languages/code-size/saswatsamal/MoTika?color=black&logo=python&logoColor=green&style=for-the-badge" />
 <img src="https://img.shields.io/github/languages/top/saswatsamal/MoTika?color=gr&logo=html5&style=for-the-badge" />
 <img src="https://img.shields.io/twitter/follow/TweetSaswat?color=blue&logo=twitter&style=for-the-badge" />
+</p>
+
+<p align="center">
+<img src="https://api.netlify.com/api/v1/badges/a3a5939c-73bf-408e-8a8a-7a7c6245064a/deploy-status" />
 </p>
 
 <p align="center">
