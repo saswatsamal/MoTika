@@ -13,13 +13,13 @@ function getAvailability() {
             // console.log(results.centers);
             if (results.centers && results.centers.length) {
                 var is_available = false;
-                results.centers.forEach(function(item, ind) {
+                results.centers.forEach(function(item) {
                     if (item.sessions && item.sessions.length) {
                         // console.log(item.sessions);
                         var available_sessions = [];
-                        item.sessions.forEach((session, index) => {
+                        item.sessions.forEach((session) => {
                             //for 45+ years above only
-                            if (session.available_capacity > 0 && session.min_age_limit == 45) {
+                            if (session.available_capacity > 0 && session.min_age_limit == 45 || session.min_age_limit == 18) {
                                 available_sessions.push(session);
                             }
                         });
