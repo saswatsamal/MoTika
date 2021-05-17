@@ -18,6 +18,7 @@ function getAvailability() {
                         // console.log(item.sessions);
                         var available_sessions = [];
                         item.sessions.forEach((session, index) => {
+                            //for 45+ years above only
                             if (session.available_capacity > 0 && session.min_age_limit == 45) {
                                 available_sessions.push(session);
                             }
