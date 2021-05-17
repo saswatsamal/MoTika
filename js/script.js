@@ -7,7 +7,7 @@ $(document).ready(function(){
 function getAvailability() {
     var available_centers = [];
     $.ajax({
-        url: "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=446&date=17-05-2021",
+        url: "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=446&date=18-05-2021",
         type: "GET",
         success: function(results) {
             // console.log(results.centers);
