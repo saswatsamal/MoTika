@@ -44,8 +44,9 @@ function prepareHtml(data) {
     var tbody = '';
     data.forEach(function(center, ind) {
         tbody += '<tr>'+
-                '<td class="column1" rowspan='+(center.availableSessions.length)+'>'+center.name+ " PIN: "+center.pincode+'</td>' +
-                '<td class="column2" rowspan='+(center.availableSessions.length)+'>'+center.address+'</td>'
+                '<th class="column2" rowspan='+(center.availableSessions.length)+'>'+"<h6>Center Name:</h6>"+center.name+ '</td>' +
+                '<th class="column2" rowspan='+(center.availableSessions.length)+'>'+"<h6>Center Address:</h6>"+center.address+'</td>'+
+                '<th class="column2" rowspan='+(center.availableSessions.length)+'>'+"<h6>PIN:</h6>"+center.pincode+'</td>'
                 ;
                 
 
@@ -60,10 +61,10 @@ function prepareHtml(data) {
             if (ind_s != 0) {
                 tbody += '<tr>';
             } 
-            tbody += '<td class="column3">'+session.min_age_limit+'</td>' +
-                '<td class="column4">'+session.date+'</td>' +
-                '<td class="column5"><span class="'+class_name+'">'+session.available_capacity+'</span></td>' +
-                '<td class="column6">'+session.vaccine+'</td>' +
+            tbody += '<th class="column2">'+"<h6>Age Limit:</h6>"+session.min_age_limit+'</td>' +
+                '<th class="column2">'+"<h6>Date:</h6>"+session.date+'</td>' +
+                '<th class="column2"><span class="'+class_name+'">'+"<h6>Availability: </h8>"+session.available_capacity+'</span></td>' +
+                '<th class="column2">'+"<h6>Vaccine: </h6>"+session.vaccine+'</td>' +
             '</tr>';
         });
     });

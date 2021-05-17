@@ -187,14 +187,17 @@ tbody tr:hover {
     padding-right: 60px;
 }
 @media screen and (max-width: 992px) {
+    h6{
+        color: #36304a;
+        font-size: 1px;
+    }
     table {
         display: block;
     }
     table > *,
     table tr,
-    table td,
     table th {
-        display: block;
+        display: list-item;
     }
     table thead {
         display: none;
@@ -203,42 +206,8 @@ tbody tr:hover {
         height: auto;
         padding: 37px 0;
     }
-    table tbody tr td {
-        padding-left: 40% !important;
-        margin-bottom: 24px;
-    }
-    table tbody tr td:last-child {
-        margin-bottom: 0;
-    }
-    table tbody tr td:before {
-        font-family: 'Roboto', sans-serif;
-        font-size: 14px;
-        color: #999;
-        line-height: 1.2;
-        font-weight: unset;
-        position: absolute;
-        width: 40%;
-        left: 30px;
-        top: 0;
-    }
-    table tbody tr td:nth-child(1):before {
-        content: "Name";
-    }
-    table tbody tr td:nth-child(2):before {
-        content: "Address";
-    }
-    table tbody tr td:nth-child(3):before {
-        content: "Age";
-    }
-    table tbody tr td:nth-child(4):before {
-        content: "Date";
-    }
-    table tbody tr td:nth-child(5):before {
-        content: "Slots";
-    }
-    table tbody tr td:nth-child(6):before {
-        content: "Vaccine";
-    }
+
+
     .column4,
     .column5,
     .column6 {
@@ -251,6 +220,7 @@ tbody tr:hover {
     .column2,
     .column3 {
         width: 100%;
+        padding-bottom: 10px;
     }
     tbody tr {
         font-size: 14px;
