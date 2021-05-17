@@ -14,9 +14,20 @@
 <h1></h1>
 </p>
 
+## About Mo Tika
+#### Mo Tika is a website specially meant for Khurda District of Odisha State to Track the availabilty of COVID-19 Vaccine.
 
-<h3 align="center"> Desktop View </h3>
-<table>
+I usually used to face difficulty to find the vaccine status near me and therefore meant this only for my district. It uses the Open API provided by CoWin to get the status of vaccines. All the data are fetched from the API itself, the website only renders the content.
 
-</table>
-<h3 align="center"> Mobile View </h3>
+## Features
+1. Real Time Update (from the CoWin API)
+2. Attractive UI
+3. Tabular Form Data
+
+## Required Improvements:
+1. Search Bar
+2. Google Map Link for Vaccine Centers
+3. Automatically Date Picker from IST.
+
+## Bug
+1. Dates are changed manually.
