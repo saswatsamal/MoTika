@@ -51,5 +51,5 @@ Moto G4 | iPhone X | iPad
 
 ## References 🌐
 
-1. CoWin API - [Check Here](https://apisetu.gov.in/public/marketplace/api/cowin) - for API
-2. Colorlib - [Check Here](https://colorlib.com/) - for Table Theme
+1. [Cowin API](https://apisetu.gov.in/public/marketplace/api/cowin): for API
+2. [Colorlib](https://colorlib.com/): for Table Theme
