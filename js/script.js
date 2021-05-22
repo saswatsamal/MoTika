@@ -1,3 +1,8 @@
+let table = document.getElementById("table100")
+let pinNotFound = document.getElementById("pin")
+let pin
+var available_centers = [];
+
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -11,7 +16,6 @@ $(document).ready(function(){
     }, 5000);
 });
 function getAvailability() {
-    var available_centers = [];
     $.ajax({
         url: "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=446&date="+today,
         type: "GET",
@@ -37,7 +41,7 @@ function getAvailability() {
                     }
                 });
                 if (available_centers.length) {
-                    prepareHtml(available_centers);
+                    filterData(available_centers)
                 }
             }
         },
@@ -48,6 +52,7 @@ function getAvailability() {
 }
 
 function prepareHtml(data) {
+    if (data.length != 0 ){
     var tbody = '';
     data.forEach(function(center, ind) {
         tbody += '<tr>'+
@@ -77,4 +82,27 @@ function prepareHtml(data) {
     });
 
     $('#data-table').html(tbody);
+    table.style.display = 'block'
+    pinNotFound.style.display='none'
+    }
+    else{
+        table.style.display='none'
+        pinNotFound.style.display='block'
 }
+}
+
+function filterData(){
+    data = available_centers
+    let filteredArray = []
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    for (i = 0; i< data.length;i++){
+        pin = data[i]["pincode"].toString()
+        if (pin){
+        if (pin.toUpperCase().indexOf(filter) > -1){
+            filteredArray.push(data[i])
+        }
+    }}
+    prepareHtml(filteredArray);
+    }
+
