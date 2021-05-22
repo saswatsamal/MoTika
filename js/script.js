@@ -1,3 +1,9 @@
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+today = dd + '-' + mm + '-' + yyyy;
+
 $(document).ready(function(){
     getAvailability();
     setInterval(() => {
@@ -7,7 +13,7 @@ $(document).ready(function(){
 function getAvailability() {
     var available_centers = [];
     $.ajax({
-        url: "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=446&date=21-05-2021",
+        url: "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=446&date="+today,
         type: "GET",
         success: function(results) {
             // console.log(results.centers);
