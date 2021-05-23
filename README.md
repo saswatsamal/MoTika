@@ -38,19 +38,24 @@ Moto G4 | iPhone X | iPad
 1. Real Time Update (from the CoWin API). 📈
 2. Attractive UI. 🌈
 3. Tabular Form Data. 📑
+4. Search Bar (PIN Code Search). 🔎
 
 ## Required Improvements ✅➕
-1. Search Bar. 🔎
+- [x] ~~Search Bar.~ 🔎~~ - Improved by @roshanbiswanath
 2. Google Map Link for Vaccine Centers. 💉
 3. Automatically Date Picker from IST. 📅
 
 ## Bug 🐜
-- [x] ~~Dates are changed manually.~~ 📅
+- [x] ~~Dates are changed manually.~~ 📅 - fixed by @roshanbiswanath
 
 ## Built with
 <img src="https://user-images.githubusercontent.com/39031660/118551744-aa3e4480-b77b-11eb-8a9f-5d25de6d1201.png" width=40>
 <img src="https://user-images.githubusercontent.com/39031660/118551769-b1655280-b77b-11eb-9c74-aaaba18b09e8.png" width=40>
 <img src="https://user-images.githubusercontent.com/39031660/118551776-b4604300-b77b-11eb-925d-6ff621a2b293.png" width=40>
+
+## Contributors
+![image](https://user-images.githubusercontent.com/39031660/119271500-76519c00-bc1f-11eb-9f27-10810c6664d9.png)
+![image](https://user-images.githubusercontent.com/39031660/119271501-794c8c80-bc1f-11eb-9d55-ca050b80f437.png)
 
 
 ## References 🌐
