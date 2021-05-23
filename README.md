@@ -39,11 +39,12 @@ Moto G4 | iPhone X | iPad
 2. Attractive UI. 🌈
 3. Tabular Form Data. 📑
 4. Search Bar (PIN Code Search). 🔎
+5. Automatically Date Picker from IST. 📅
 
 ## Required Improvements ✅➕
+1. Google Map Link for Vaccine Centers. 💉
 - [x] ~~Search Bar.~ 🔎~~ - Improved by @roshanbiswanath
-2. Google Map Link for Vaccine Centers. 💉
-3. Automatically Date Picker from IST. 📅
+- [x] ~~Automatically Date Picker from IST. 📅~~ Improved by @roshanbiswanath
 
 ## Bug 🐜
 - [x] ~~Dates are changed manually.~~ 📅 - fixed by @roshanbiswanath
