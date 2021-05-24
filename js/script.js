@@ -2,7 +2,7 @@ let table = document.getElementById("table100")
 let pinNotFound = document.getElementById("pin")
 let pin
 var available_centers = [];
-
+let loadingBoolean = true
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -10,16 +10,18 @@ var yyyy = today.getFullYear();
 today = dd + '-' + mm + '-' + yyyy;
 
 $(document).ready(function(){
+    if (loadingBoolean){
     getAvailability();
     setInterval(() => {
         getAvailability();
-    }, 5000);
+    }, 5000);}
 });
 function getAvailability() {
     $.ajax({
         url: "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=446&date="+today,
         type: "GET",
         success: function(results) {
+            available_centers = []
             // console.log(results.centers);
             if (results.centers && results.centers.length) {
                 var is_available = false;
@@ -92,6 +94,7 @@ function prepareHtml(data) {
 }
 
 function filterData(){
+    loadingBoolean = false
     data = available_centers
     let filteredArray = []
     input = document.getElementById("myInput");
@@ -103,6 +106,7 @@ function filterData(){
             filteredArray.push(data[i])
         }
     }}
+    loadingBoolean = true
     prepareHtml(filteredArray);
     }
 
