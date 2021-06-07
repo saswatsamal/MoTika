@@ -160,7 +160,6 @@ tbody tr:hover {
 }
 .column1 {
     width: 160px;
-    padding-left: 40px;
 }
 .column2 {
     width: 245px;
@@ -170,17 +169,14 @@ tbody tr:hover {
 }
 .column4 {
     width: 70px;
-    text-align: right;
-    padding-left: 60px;
+    padding-left: 25px;
 }
 .column5 {
     width: 70px;
-    text-align: right;
+    padding-left: 35px;
 }
 .column6 {
     width: 22px;
-    text-align: right;
-    padding-right: 60px;
 }
 @media screen and (max-width: 992px) {
     h6{
@@ -201,13 +197,6 @@ tbody tr:hover {
     table tbody tr {
         height: auto;
         padding: 37px 0;
-    }
-
-
-    .column4,
-    .column5,
-    .column6 {
-        text-align: left;
     }
     .column4,
     .column5,
@@ -230,9 +219,6 @@ tbody tr:hover {
 }
 
 .footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
     width: 100%;
     background: #c850c0;
     background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
@@ -242,6 +228,4 @@ tbody tr:hover {
     color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Baloo Bhaina 2', cursive;
-    
-    padding-top: 2px;
-  }
+}
