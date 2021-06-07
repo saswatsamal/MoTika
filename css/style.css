@@ -160,6 +160,7 @@ tbody tr:hover {
 }
 .column1 {
     width: 160px;
+    padding-left: 65px;
 }
 .column2 {
     width: 245px;
