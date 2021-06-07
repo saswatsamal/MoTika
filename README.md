@@ -57,6 +57,7 @@ Moto G4 | iPhone X | iPad
 ## Contributors
 ![image](https://user-images.githubusercontent.com/39031660/119271500-76519c00-bc1f-11eb-9f27-10810c6664d9.png)
 ![image](https://user-images.githubusercontent.com/39031660/119271501-794c8c80-bc1f-11eb-9d55-ca050b80f437.png)
+![image](https://user-images.githubusercontent.com/39031660/121017224-aae65b80-c7ba-11eb-8705-693fcf15264b.png)
 
 
 ## References 🌐
