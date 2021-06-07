@@ -14,6 +14,8 @@
 		<title>ମୋ ଟିକା 💉</title>
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <!-- fontawesome CDN -->
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.1.0/css/all.css" />
 </head>
 <body>
 
@@ -22,40 +24,32 @@
 			<div class="wrap-table100">
                 <img src="./assets/img/icon.png" width="100"> <img src="./assets/img/logo.png">
                 <h3 style="padding-top: 1rem;"> ଖୋର୍ଦ୍ଧା ଜିଲ୍ଲାରେ ଉପଲବ୍ଧ ଟିକା କେନ୍ଦ୍ର|</h3>
-                <h6>Vaccine Center Available at Khorda District</h6> <button class="btn btn-primary"><a href="./disclaimer.html" style="color: aliceblue;">Disclaimer</a></button>
-                <button class="btn btn-success" ><a href="https://selfregistration.cowin.gov.in/" style="color: aliceblue;">Book Now</a></button>
-                <button class="btn btn-warning" ><a href="https://odishacovid19dashboard.netlify.app/" style="color: aliceblue;">Odisha COVID19 Dashboard</a></button>
-				<input type="text" class="form-control" id="myInput" onkeyup="filterData()" placeholder="Search for PIN" title="Type in a Pin">
-                <hr>
-                <br>
-
+                <h6>Vaccine Center Available at Khorda District</h6> <button class="btn btn-primary"><a href="./disclaimer.html" style="text-decoration: none; color: aliceblue;">Disclaimer</a></button>
+                <button class="btn btn-success" ><a href="https://selfregistration.cowin.gov.in/" style="text-decoration: none; color: aliceblue;">Book Now</a></button>
+                <button class="btn btn-warning" ><a href="https://odishacovid19dashboard.netlify.app/" style="text-decoration: none; color: aliceblue;">Odisha COVID19 Dashboard</a></button>
+				<input type="text" class="form-control my-4" id="myInput" onkeyup="filterData()" placeholder="Search for PIN" title="Type in a Pin">
 				<div class="table100" id="table100">
                     <table>
-                        <thead>
-                            <tr class="table100-head">
-                                <th class="column1">Name</td>
-                                <th class="column2">Address</td>
-                                <th class="column2">PIN</td>
-                                <th class="column3">Age</td>
-                                <th class="column4">Date</td>
-                                <th class="column5">Slots</td>
-                                <th class="column6">Vaccine</td>
-                            </tr>
+                        <thead class="table100-head">
+                            <th class="column1">Name</th>
+                            <th class="column2">Address</th>
+                            <th class="column2">PIN</th>
+                            <th class="column3">Age</th>
+                            <th class="column4">Date</th>
+                            <th class="column5">Slots</th>
+                            <th class="column6">Vaccine Type</th>
                         </thead>
-                        <tbody id="data-table">
-                        </tbody>
+                        <tbody id="data-table"></tbody>
                     </table>
                 </div>
-<h6 id = "pin">Pin Not Found</h6>
+                <h6 id = "pin">Pin Not Found</h6>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    
     <div class="footer">
-        <p>ସାସ୍ୱତ ସାମଲଙ୍କ ଦ୍ୱାରା ନିର୍ମିତ <img src="./assets/icons/favorite_border_black_24dp.svg"> Made by <a href="https://github.com/saswatsamal" style="color: aliceblue;"> Saswat Samal</a></p>
-        
+        <p class="py-1">ସାସ୍ୱତ ସାମଲଙ୍କ ଦ୍ୱାରା ନିର୍ମିତ&nbsp;&nbsp;<i class="far fa-heart" style="color: black; font-size: 20px;"></i>&nbsp;&nbsp;Made by <a href="https://github.com/saswatsamal" style="color: aliceblue;">Saswat Samal</a></p>
     </div>
 
     <!-- AJAX Script -->
