@@ -91,6 +91,7 @@ iframe {
 }
 .wrap-table100 {
     width: 1170px;
+    text-align: center;
 }
 table {
     border-spacing: 1;
@@ -182,6 +183,9 @@ tbody tr:hover {
     h6{
         color: #000000;
         font-size: 1px;
+    }
+    .dash-btn{
+        margin-top: 10px;
     }
     table {
         display: block;
