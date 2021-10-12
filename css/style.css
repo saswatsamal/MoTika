@@ -52,6 +52,16 @@ input {
     outline: none;
     border: none !important;
 }
+.search-input {
+    font-family: 'Poppins',sans;
+    background: #fff;
+    border: 0px !important;
+    border-radius: 5rem !important;
+    font-size: 18px !important;
+    width: 150px !important;
+    padding: 1.3rem 1rem !important; 
+    margin: auto;
+}
 textarea {
     display: block;
     outline: none;

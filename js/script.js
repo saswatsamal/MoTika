@@ -77,7 +77,7 @@ function prepareHtml(data) {
             } 
             tbody += '<th class="column2">'+"<h6>Age Limit:</h6>"+session.min_age_limit+'</td>' +
                 '<th class="column2">'+"<h6>Date:</h6>"+session.date+'</td>' +
-                '<th class="column2"><span class="'+class_name+'">'+"<h6>Availability: </h8>"+session.available_capacity+'</span></td>' +
+                '<th class="column2"><span style="width: 140px; !important" class="'+class_name+'">'+"<h6 style='margin-bottom: 0px; padding: 0.2em;'>Availability: " +session.available_capacity+ '</h6></span></td>' +
                 '<th class="column2">'+"<h6>Vaccine: </h6>"+session.vaccine+'</td>' +
             '</tr>';
         });
